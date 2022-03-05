@@ -52,6 +52,7 @@ class Stack:
 if __name__ == "__main__":
     stack = Stack()
     want_to_continue = True
+
     while want_to_continue:
         choice = int(input("enter your choice \n 1. Push\n 2. Pop\n 3. Peek\n 4. Display\n 5. Exit\n"))
         match choice:
@@ -66,6 +67,11 @@ if __name__ == "__main__":
                 stack.display()
             case 5:
                 want_to_continue = False
+            case _:
+                print("you entered wrong choice, please try again from given choices!")
+
+
+           
 
 
 
